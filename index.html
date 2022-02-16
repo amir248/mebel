@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mebel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *{
+      margin:0;
+      }
+      body{
+        background:white;
+        min-height:100vh;
+      }
+      main{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:100%;
+        flex-direction:column;
+      }
+      article{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:100%;
+        width:1440px;
+        flex-direction:column;
+      }
+      header{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:100%;
+        width:1440px;
+        min-height:69px;
+        background:rgba(200,200,200);
+      }
+      header h1{
+        margin-right:45%;
+      }
+      article button{
+        height:33px;
+        width:204px;
+        color:white;
+        border:1px solid white;
+        border-radius:1px;
+        background:none;
+      }
+      article button:hover{
+        background:white;
+        color:black;
+      }
+      .line{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        min-height:155px;
+        width:1440px;
+        max-width:100%;
+
+      }
+      .lineOk{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:row;
+        font-size:15px;
+        width:300px;
+        max-width:100%;
+        flex-wrap:wrap;
+      }
+      </style>
+  </head>
+  <body>
+    <main>
+    <header>
+      <div style="display:flex; align-items:start;justify-content:start;width:1440px; max-width:100%; ">
+      <span style='margin:15px;'>Wooden Furniture</span> <span style='margin:15px;'>About </span> <span style='margin:15px;'> Stories</span>
+      </div>
+      <h1>Woodendot</h1>
+    </header>
+    <span style='margin:10px;'></span>
+    <article>
+      <div style="display:flex; justify-content:center;align-items:center;min-height:698px;flex-direction:column;width:1440px;max-width:100%;background:url('image/IMAGE.png')">
+      <p style="text-align:center; color:white; font-size:27px;">Furniture designed to live in harmony, creating distinctive and<br>timeless spaces</p>
+      <button type="button" name="button">Discover now</button>
+      </div>
+      <div class="line">
+        <div class='lineOk'><img src="image/1.png"> <p style="margin-left:3%;">Free Shipping</p></div>
+        <div class='lineOk'><img src="image/2.png"> <p style="margin-left:3%;">Awarded Product Design</p></div>
+        <div class='lineOk'><img src="image/3.png"> <p style="margin-left:3%;">Ecofriendly Approach</p></div>
+        <div class='lineOk'><img src="image/4.png"> <p style="margin-left:3%;">Crafted in Spain</p></div>
+        <div class='lineOk'><p style="margin-left:3%;">4.8 Star Reviews</p>
+
+      </div>
+    </article>
+    </main>
+  </body>
+</html>
