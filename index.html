@@ -34,7 +34,22 @@
         max-width:100%;
         width:1440px;
         min-height:69px;
-        background:rgba(200,200,200);
+        /* background:rgba(200,200,200); */
+      }
+      .menu{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:100%;
+        width:1440px;
+      }
+      .menu .cnop{
+        display:flex;
+        align-items:start;
+        justify-content:start;
+        /* width:1440px; */
+        max-width:100%;
+        /* background:green; */
       }
       header h1{
         margin-right:45%;
@@ -70,13 +85,53 @@
         max-width:100%;
         flex-wrap:wrap;
       }
+      @media(max-width:700px){
+        .menu .cnop{
+          display:none;
+        }
+        .menu{
+          display:flex;
+          justify-content:start;
+          align-items:start;
+          /* background:green; */
+          width:100%;
+          height:35px;
+          flex-direction:column;
+        }
+        .lines{
+          width:35px;
+          height:3px;
+          background:violet;
+          margin:3%;
+        }
+        .lines2{
+          width:55px;
+          height:3px;
+          background:yellow;
+          margin:3%;
+        }
+        .lines3{
+          width:35px;
+          height:3px;
+          background:red;
+          margin:3%;
+        }
+        header h1{
+          margin-right:0;
+          /* background:yellow; */
+        }
+      }
       </style>
   </head>
-  <body
+  <body>
     <main>
     <header>
-      <div style="display:flex; align-items:start;justify-content:start;width:1440px; max-width:100%; ">
-      <span style='margin:15px;'>Wooden Furniture</span> <span style='margin:15px;'>About </span> <span style='margin:15px;'> Stories</span>
+      <div class='menu'>
+        <span class="lines"></span>
+        <span class="lines2"></span>
+        <span class="lines3"></span>
+        <p class='cnop'>
+      <span style='margin:15px;'>Wooden Furniture</span> <span style='margin:15px;'>About </span> <span style='margin:15px;'> Stories</span></p>
       </div>
       <h1>Woodendot</h1>
     </header>
