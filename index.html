@@ -38,7 +38,7 @@
       }
       .menu{
         display:flex;
-        justify-content:center;
+        justify-content:start;
         align-items:center;
         max-width:100%;
         width:1440px;
@@ -128,9 +128,45 @@
         flex-wrap:wrap;
         width:1440px;
         max-width:100%;
-        height:320px;
+        min-height:320px;
       }
       .boxFoto img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        max-width:100%;
+        min-height: 320px;
+        flex-wrap: wrap;
+      }
+      .slideOne{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        width:1440px;
+        max-width:100%;
+        min-height:550px;
+        flex-wrap: wrap;
+      }
+      .boxSlide{
+        display:flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        /* background: green; */
+        width:calc(480px - 6%);
+        max-width: 100%;
+        min-height:542px;
+        flex-wrap:wrap;
+        font-size: 18px;
+        line-height: 31px;
+        flex-direction: column;
+        margin:3%;
+      }
+      .boxEven{
+        width:960px;
+        max-width:100%;
+        /* background: yellow; */
+      }
+      img{
         max-width:100%;
       }
       </style>
@@ -166,6 +202,82 @@
         <img src="image/int.png">
         <img src="image/int.png">
         <img src="image/int.png">
+      </div>
+      <span style='margin:3%;'></span>
+
+      <div class="slideOne">
+          <div class="boxSlide">
+
+            <p><strong>Cloe </strong></p>
+            <p>Modular Storage System</p>
+            <p> From $ 1.176</p>
+            <p>An expansive way to furnish your space exactly how you need it and like it. Transform it in exactly what you need like a bookshelf, tv stand or show rack, you pick.</p>
+            <strong>Shop now</strong>
+          </div>
+          <div class="boxEven">
+            <img src='image/boxOne.png' alt="mebel">
+          </div>
+      </div>
+      <div class="slideOne">
+        <div class="boxEven">
+          <img src='image/boxTwo.png' alt="mebel">
+        </div>
+        <div class="boxSlide" style="align-items:flex-start;">
+          <strong>Pelican</strong>
+          <p>Shelves with hidden hooks</p>
+          <p>From $89</p>
+          <p>Store or exhibit your favorite objects in the entrance hall, modern hallways, living rooms and bedrooms with a decorative and minimalist touch.</p>
+          <p>+ 3 sizes, + 5 color finishes</p>
+          <strong>Shop now</strong>
+        </div>
+        <div class="slideOne">
+          <div class="boxSlide">
+            <p style='color:red;'>New Favorite!</p>
+            <strong>Alada</strong>
+            <p>Floating folding desk</p>
+            <p>From $534</p>
+            <p>A timeless and discreet folding desk that seamlessly transforms into a decorative shelf in seconds.</p>
+            <p>+ 4 color finishes</p>
+            <strong>Shop now</strong>
+          </div>
+          <div class="boxEven">
+            <img src='image/boxThree.png'alt='meb'>
+          </div>
+        </div>
+        <div class="slideOne">
+          <div class="boxEven">
+            <img src='image/boxFour.png'>
+          </div>
+          <div class="boxSlide" style="align-items:flex-start;">
+            <strong>Alaba Collection</strong>
+            <p>Modular bedside table & shelf</p>
+            <p>From $272</p>
+            <p>A versatile and modular piece with a sculptural touch that can be used as a wall shelf or as a bedside table with concealed storage.</p>
+            <p> +6 color finishers, infinite combinations</p>
+            <strong>Shop now</strong>
+            <img src="image/log.png" alt="firma">
+          </div>
+        </div>
+        <div class="slideOne">
+          <div class="boxSlide">
+            <strong>Batea Collection</strong>
+            <p>Tables with storage & tray tables</p>
+            <p>From $372</p>
+            <p>Composed of clean and rounded lines, the Batea Collection includes unique tables with extra functionality like a removable tray, and hidden storage.</p>
+            <p>+3 sizes, + 6 color finishes</p>
+            <strong> Shop now</strong>
+          </div>
+          <div class="boxEven">
+            <img src='image/boxFive.png' alt='meb'>
+          </div>
+        </div>
+        <div class="freeFoto">
+          <h2>Our pieces inside your home</h2>
+          <p>Get inspired by our products in resl-life. Tag us and be featured!</p>
+          <img src='image/one.png' alt="one">
+          <img src='image/two.png' alt="one">
+          <img src='image/free.png' alt="one">
+        </div>
       </div>
     </article>
     </main>
