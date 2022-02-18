@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sibiro.ru/sitemap.xml
+Sitemap: https://sibiro.ru/site/sitemap.xml
