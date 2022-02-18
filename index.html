@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>mebel</title>
+    <title>Sibiro</title>
+    <meta name='description' content='Корпусная мебель под заказ, изготовление по индивидуальным размерам.'>
+    <link rel='canonical' href="https://sibiro.ru">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="image/favicon.svg" rel="icon" type="image/svg+xml" />
     <style>
@@ -449,6 +451,8 @@
     </footer>
     </main>
     <script>
+    if(window.innerWidth<=700){
+
 document.querySelector('.lines').style.cssText="background:black;";
 document.querySelector('.lines2').style.cssText="background:black;";
 document.querySelector('.lines3').style.cssText="background:black;";
@@ -457,6 +461,36 @@ countClick=+0;
 let createEl;
 createEl=false;
 let textMenu = '<a href="/"><h1>Wooden Furniture</h1></a><a href="#lol"><h2>About</h2></a><h2>Stories</h2>';
+function CloseMenu(){
+  document.querySelector('.lines').style.cssText=`
+  margin:5px;
+  width:70px;
+  background:black;
+  transform:rotate(0deg);
+  width:35px;
+  `;
+  document.querySelector('.lines2').style.cssText=`
+  width:35px;
+  height:7px;
+  margin:5px;
+  background:black;
+  `;
+  document.querySelector('.lines3').style.cssText=`
+  margin:5px;
+  width:70px;
+  background:black;
+  transform:rotate(0deg);
+  width:35px;
+  `;
+  document.querySelector('div').style.cssText=`
+  height:0;
+  background:violet;
+  transition:all 3s ease-out;
+  `;
+  document.querySelector('div').innerHTML=``;
+  document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
+  countClick=0;
+}
 document.querySelector('.menu').addEventListener('click',()=>{
   console.log(createEl);
   countClick++;
@@ -491,6 +525,11 @@ document.querySelector('.menu').addEventListener('click',()=>{
       `;
       document.querySelector('div').innerHTML=`${textMenu}`;
       document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
+      document.querySelector('div').addEventListener('click',()=>{
+        console.log("ClickDiv");
+        document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
+        CloseMenu();
+      });
     }else if(createEl==true){
       console.log("ctrateEl true");
       document.querySelector('div').style.cssText=`
@@ -499,7 +538,6 @@ document.querySelector('.menu').addEventListener('click',()=>{
       align-items:center;
       flex-direction:column;
       width:100%;
-
       background:rgba(0,255,0,0.3);
       position:absolute;
       height:100%;
@@ -507,6 +545,11 @@ document.querySelector('.menu').addEventListener('click',()=>{
       `;
       document.querySelector('div').innerHTML=`${textMenu}`;
       document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
+      document.querySelector('div').addEventListener('click',()=>{
+        console.log("ClickDiv");
+        document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
+        CloseMenu();
+      });
     }else{
       opMenu.style.cssText=`
       width:100%;
@@ -520,40 +563,13 @@ document.querySelector('.menu').addEventListener('click',()=>{
     console.log(createEl);
   }else if(countClick==2){
     console.log(countClick);
-    document.querySelector('.lines').style.cssText=`
-    margin:5px;
-    width:70px;
-    background:black;
-    transform:rotate(0deg);
-    width:35px;
-    `;
-    document.querySelector('.lines2').style.cssText=`
-    width:35px;
-    height:7px;
-    margin:5px;
-    background:black;
-    `;
-    document.querySelector('.lines3').style.cssText=`
-    margin:5px;
-    width:70px;
-    background:black;
-    transform:rotate(0deg);
-    width:35px;
-    `;
-    document.querySelector('div').style.cssText=`
-    height:0;
-    background:violet;
-    transition:all 3s ease-out;
-    `;
-    document.querySelector('div').innerHTML=``;
-    document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
-    countClick=0;
+    CloseMenu();
   }else{
     console.log(countClick+"ok");
   }
 
 });
-
+}
     </script>
   </body>
 </html>
