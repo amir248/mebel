@@ -1,1 +1,4 @@
-robot
+User-agent: *
+Allow: /
+
+Sitemap: https://sibiro.ru/sitemap.xml
