@@ -456,6 +456,7 @@ let countClick;
 countClick=+0;
 let createEl;
 createEl=false;
+let textMenu = '<h1>Wooden Furniture</h1><h2>About</h2><h2>Stories</h2>';
 document.querySelector('.menu').addEventListener('click',()=>{
   console.log(createEl);
   countClick++;
@@ -478,23 +479,34 @@ document.querySelector('.menu').addEventListener('click',()=>{
       let opMenu=document.createElement('div');
       document.body.prepend(opMenu);
       opMenu.style.cssText=`
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
       width:100%;
-      height:3px;
       background:rgba(0,255,0,0.3);
       position:absolute;
       height:100%;
       transition:all 3s ease-out;
       `;
+      document.querySelector('div').innerHTML=`${textMenu}`;
+      document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
     }else if(createEl==true){
-      console.log("true");
+      console.log("ctrateEl true");
       document.querySelector('div').style.cssText=`
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
       width:100%;
-      height:3px;
+
       background:rgba(0,255,0,0.3);
       position:absolute;
       height:100%;
       transition:all 3s ease-out;
       `;
+      document.querySelector('div').innerHTML=`${textMenu}`;
+      document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
     }else{
       opMenu.style.cssText=`
       width:100%;
@@ -534,6 +546,8 @@ document.querySelector('.menu').addEventListener('click',()=>{
     background:yellow;
     transition:all 3s ease-out;
     `;
+    document.querySelector('div').innerHTML=``;
+    document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
     countClick=0;
   }else{
     console.log(countClick+"ok");
