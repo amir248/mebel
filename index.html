@@ -454,7 +454,10 @@ document.querySelector('.lines2').style.cssText="background:black;";
 document.querySelector('.lines3').style.cssText="background:black;";
 let countClick;
 countClick=+0;
+let createEl;
+createEl=false;
 document.querySelector('.menu').addEventListener('click',()=>{
+  console.log(createEl);
   countClick++;
   if(countClick==1){
     console.log(countClick);
@@ -471,7 +474,41 @@ document.querySelector('.menu').addEventListener('click',()=>{
     background:green;
     transform:rotate(-45deg);
     `;
+    if(createEl==false){
+      let opMenu=document.createElement('div');
+      document.body.prepend(opMenu);
+      opMenu.style.cssText=`
+      width:100%;
+      height:3px;
+      background:rgba(0,255,0,0.3);
+      position:absolute;
+      height:100%;
+      transition:all 3s ease-out;
+      `;
+    }else if(createEl==true){
+      console.log("true");
+      document.querySelector('div').style.cssText=`
+      width:100%;
+      height:3px;
+      background:rgba(0,255,0,0.3);
+      position:absolute;
+      height:100%;
+      transition:all 3s ease-out;
+      `;
+    }else{
+      opMenu.style.cssText=`
+      width:100%;
+      height:3px;
+      background:green;
+      position:absolute;
+      height:100%;
+      transition:all 3s ease-out;
+      `;
+    }
+    createEl=true;
+    console.log(createEl);
   }else if(countClick==2){
+    console.log(countClick);
     document.querySelector('.lines').style.cssText=`
     margin:5px;
     width:70px;
@@ -491,6 +528,11 @@ document.querySelector('.menu').addEventListener('click',()=>{
     background:black;
     transform:rotate(0deg);
     width:35px;
+    `;
+    document.querySelector('div').style.cssText=`
+    height:0;
+    background:yellow;
+    transition:all 3s ease-out;
     `;
     countClick=0;
   }else{
