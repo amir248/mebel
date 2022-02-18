@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>mebel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="image/favicon.svg" rel="icon" type="image/svg+xml" />
     <style>
       *{
       margin:0;
@@ -268,7 +269,7 @@
         <p class='cnop'>
       <span style='margin:15px;'>Wooden Furniture</span> <span style='margin:15px;'>About </span> <span style='margin:15px;'> Stories</span></p>
       </div>
-      <h1>Woodendot</h1>
+      <h1>Sibiro</h1>
     </header>
     <!-- <span style='margin:10px;'></span> -->
     <article>
@@ -448,7 +449,55 @@
     </footer>
     </main>
     <script>
+document.querySelector('.lines').style.cssText="background:black;";
+document.querySelector('.lines2').style.cssText="background:black;";
+document.querySelector('.lines3').style.cssText="background:black;";
+let countClick;
+countClick=+0;
+document.querySelector('.menu').addEventListener('click',()=>{
+  countClick++;
+  if(countClick==1){
+    console.log(countClick);
+    document.querySelector('.lines').style.cssText=`
+    margin:0;
+    width:70px;
+    background:green;
+    transform:rotate(45deg);
+    `;
+    document.querySelector('.lines2').style.cssText="display:none";
+    document.querySelector('.lines3').style.cssText=`
+    margin:0;
+    width:70px;
+    background:green;
+    transform:rotate(-45deg);
+    `;
+  }else if(countClick==2){
+    document.querySelector('.lines').style.cssText=`
+    margin:5px;
+    width:70px;
+    background:black;
+    transform:rotate(0deg);
+    width:35px;
+    `;
+    document.querySelector('.lines2').style.cssText=`
+    width:35px;
+    height:7px;
+    margin:5px;
+    background:black;
+    `;
+    document.querySelector('.lines3').style.cssText=`
+    margin:5px;
+    width:70px;
+    background:black;
+    transform:rotate(0deg);
+    width:35px;
+    `;
+    countClick=0;
+  }else{
+    console.log(countClick+"ok");
+  }
 
+});
     </script>
   </body>
 </html>
