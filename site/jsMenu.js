@@ -10,43 +10,45 @@ if(window.innerWidth<=700){
   function CloseMenu(){
     document.querySelector('.lines').style.cssText=`
       margin:5px;
-      width:70px;
       background:black;
       transform:rotate(0deg);
       width:35px;
+      transition:all 1s ease-out;
       `;
     document.querySelector('.lines2').style.cssText=`
       width:35px;
       height:7px;
       margin:5px;
       background:black;
+      transition:all 1s ease-out;
       `;
     document.querySelector('.lines3').style.cssText=`
       margin:5px;
-      width:70px;
       background:black;
       transform:rotate(0deg);
       width:35px;
+      transition:all 1s ease-out;
       `;
     document.querySelector('div').style.cssText=`
       height:0;
       background:violet;
-      transition:all 3s ease-out;
+      transition:all 0.3s ease-out;
       `;
     document.querySelector('div').innerHTML=``;
     document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
     countClick=0;
   }
   document.querySelector('.menu').addEventListener('click',()=>{
-  console.log(createEl);
+  // console.log(createEl);
   countClick++;
   if(countClick==1){
-    console.log(countClick);
+    // console.log(countClick);
     document.querySelector('.lines').style.cssText=`
     margin:0;
     width:70px;
     background:green;
     transform:rotate(45deg);
+    transition:all 1s ease-out;
     `;
     document.querySelector('.lines2').style.cssText="display:none";
     document.querySelector('.lines3').style.cssText=`
@@ -54,6 +56,7 @@ if(window.innerWidth<=700){
     width:70px;
     background:green;
     transform:rotate(-45deg);
+    transition:all 1s ease-out;
     `;
     if(createEl==false){
       let opMenu=document.createElement('div');
@@ -67,17 +70,17 @@ if(window.innerWidth<=700){
       background:rgba(0,255,0,0.3);
       position:absolute;
       height:100%;
-      transition:all 3s ease-out;
+      transition:all 1s ease-out;
       `;
       document.querySelector('div').innerHTML=`${textMenu}`;
       document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
       document.querySelector('div').addEventListener('click',()=>{
-        console.log("ClickDiv");
+        // console.log("ClickDiv");
         document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
         CloseMenu();
       });
     }else if(createEl==true){
-      console.log("ctrateEl true");
+      // console.log("ctrateEl true");
       document.querySelector('div').style.cssText=`
       display:flex;
       justify-content:center;
@@ -87,12 +90,12 @@ if(window.innerWidth<=700){
       background:rgba(0,255,0,0.3);
       position:absolute;
       height:100%;
-      transition:all 3s ease-out;
+      transition:all 1s ease-out;
       `;
       document.querySelector('div').innerHTML=`${textMenu}`;
       document.getElementsByTagName('body')[0].style.cssText=`overflow:hidden`;
       document.querySelector('div').addEventListener('click',()=>{
-        console.log("ClickDiv");
+        // console.log("ClickDiv2");
         document.getElementsByTagName('body')[0].style.cssText=`overflow:auto`;
         CloseMenu();
       });
@@ -106,9 +109,9 @@ if(window.innerWidth<=700){
       `;
     }
     createEl=true;
-    console.log(createEl);
+    // console.log(createEl);
   }else if(countClick==2){
-    console.log(countClick);
+    // console.log(countClick);
     CloseMenu();
   }else{
     console.log(countClick+"ok");
