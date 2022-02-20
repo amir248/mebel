@@ -1,0 +1,20 @@
+let IMG9;
+IMG9=[{
+    count:0,
+    alt:"professional html coder",
+    src:"https://sibiro.ru/image/one.png",
+    hash: "nuli",
+    title: "заказать прихожую"
+    },{
+    count:'1',
+    alt:"Прогер, верстальщик, heml coder",
+    src:"https://sibiro.ru/image/two.png",
+    hash: "uno",
+    title: "Good things Are going to Happen"
+    },{
+    count:'2',
+    alt:"Прогер ",
+    src:"https://sibiro.ru/image/free.png",
+    hash: "do",
+    title: "Good things Are going to Happen"
+    }]

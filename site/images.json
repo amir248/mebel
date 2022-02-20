@@ -3,7 +3,7 @@ IMG=[{
     count:0,
     alt:"professional html coder",
     src:"https://sibiro.ru/image/odyn.png",
-    hash: "hash_nul",
+    hash: "nul",
     title: "заказать прихожую"
     },{
     count:'1',

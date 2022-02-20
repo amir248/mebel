@@ -6,7 +6,7 @@ if(window.innerWidth<=700){
   countClick=+0;
   let createEl;
   createEl=false;
-  let textMenu = '<a href="/"><h1>Wooden Furniture</h1></a><a href="#lol"><h2>About</h2></a><h2>Stories</h2>';
+  let textMenu = '<a href="/"><h1 style="border:2px solid black; border-radius:10px;">Cистемы хранения</h1></a><a href="#contacts"><h2>Контакты</h2></a><h2><a href="tel:+79528807647">+7 952 880 76 47</a></h2>';
   function CloseMenu(){
     document.querySelector('.lines').style.cssText=`
       margin:5px;
@@ -67,7 +67,7 @@ if(window.innerWidth<=700){
       align-items:center;
       flex-direction:column;
       width:100%;
-      background:rgba(0,255,0,0.3);
+      background:rgba(255,255,255,0.7);
       position:absolute;
       height:100%;
       transition:all 1s ease-out;
@@ -87,7 +87,7 @@ if(window.innerWidth<=700){
       align-items:center;
       flex-direction:column;
       width:100%;
-      background:rgba(0,255,0,0.3);
+      background:rgba(255,255,255,0.7);
       position:absolute;
       height:100%;
       transition:all 1s ease-out;
