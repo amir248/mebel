@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+Disallow: /noIndex/
 Sitemap: https://sibiro.ru/site/sitemap.xml
+Host: https://sibiro.ru
