@@ -103,5 +103,8 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
       }
     }
 }else{
+  document.querySelector('#ClickFlipping').style.cssText=`display:none;`;
+  document.querySelector('#ClickFlippingTwo').style.cssText=`display:none;`;
+
   console.log("Вы используете ПК.");
 }
