@@ -145,8 +145,15 @@ article button:hover{
   background:#daffda;
   border-radius: 15px;
 }
-.slideOne:nth-child(4){
-  background:#f9c7f9;
+.slideOne:nth-child(even){
+  background:rgba(130,0,80,0.1);
+  border-radius: 15px;
+  margin-top:1%;
+  padding-top:7px;
+  margin-bottom:1%;
+}
+.slideOne:nth-child(5n){
+  background:rgba(200,250,0,0.1);
   border-radius: 15px;
   margin-top:1%;
   padding-top:7px;

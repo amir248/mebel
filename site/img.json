@@ -32,47 +32,41 @@ IMG9=[{
     },{
     count:'5',
     alt:"встраиваемая кухня",
-    src:"https://sibiro.ru/image/oneDx.png",
-    hash: "kitcheN",
-    title: "Good things Are going to Happen"
-    },{
-    count:'6',
-    alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneKuh.png",
     hash: "kitchenN",
     title: "Good things Are going to Happen"
     },{
-    count:'7',
+    count:'6',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneTwon.png",
     hash: "kitchen-",
     title: "встраиваемая кухняn"
     },{
-    count:'8',
+    count:'7',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneUs.png",
     hash: "kitchenU",
     title: "встраиваемая кухня"
     },{
-    count:'9',
+    count:'8',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneUY.png",
     hash: "kitchenh",
     title: "Good things Are going to Happen"
     },{
-    count:'10',
+    count:'9',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneUs.png",
     hash: "kitchenhee",
     title: "встраиваемая кухня"
     },{
-    count:'11',
+    count:'10',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneYt.png",
     hash: "kitchenhe",
     title: "Good things Are going to Happen"
     },{
-    count:'12',
+    count:'11',
     alt:"встраиваемая кухня",
     src:"https://sibiro.ru/image/oneSgib.png",
     hash: "kitchenT",

@@ -72,7 +72,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
         CountCl=0;
         GoCli();
       }else{
-        console.log("I' m working!");
+        // console.log("I' m working!");
       }
         // console.log("coutnClick"+'__'+CountClick);
         for(let newa=0;newa<IMG9.length;newa++){
