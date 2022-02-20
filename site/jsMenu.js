@@ -6,7 +6,7 @@ if(window.innerWidth<=700){
   countClick=+0;
   let createEl;
   createEl=false;
-  let textMenu = '<a href="/"><h1 style="border:2px solid black; border-radius:10px;">Cистемы хранения</h1></a><a href="#contacts"><h2>Контакты</h2></a><h2><a href="tel:+79528807647">+7 952 880 76 47</a></h2>';
+  let textMenu = '<a href="#modular-system"><h2 class="menuShka">Уникальный дизайн</h2></a><a href="#zagolovok700"><h2 class="menuShka">Шкафы купе</h2></a><a href="#contacts"><h2 class="menuShka">Контакты</h2></a><a href="#torg"><h2 class="menuShka">Торговое оборудование</h2></a><a href="tel:+79528807647"><h2 class="menuShka">+7 952 880 76 47</h2></a>';
   function CloseMenu(){
     document.querySelector('.lines').style.cssText=`
       margin:5px;

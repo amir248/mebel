@@ -256,3 +256,25 @@ footer{
     margin:0;
   }
 }
+.menuShka{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  max-width:100%;
+  margin:1%;
+  min-height:25px;
+  background: gray;
+  border-radius:15px;
+  padding:5px;
+}
+.menushka a{
+  text-decoration:none;
+}
+.menuShka a{
+  text-decoration: none;
+}
+.menuShka:hover{
+  background: rgb(0,0,0);
+  color:white;
+}
