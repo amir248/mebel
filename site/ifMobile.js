@@ -2,12 +2,12 @@ console.log(window.navigator.userAgent);
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<700) {
     console.log("Вы используете мобильное устройство (телефон или планшет). And может окошко сжато по ширине >700px");
     // document.querySelector('img').style.cssText=`display:none;`;
-    document.querySelector('#img3').src= ' ';
-    document.querySelector('#img3').setAttribute('alt', ' ');
-    document.querySelector('#img1').src= ' ';
-    document.querySelector('#img1').setAttribute('alt', ' ');
-    document.querySelector('#img2').src= ' ';
-    document.querySelector('#img2').setAttribute('alt', ' ');
+    document.querySelector('#img3').style.cssText=`display:none;`;
+    document.querySelector('#img3').style.cssText=`display:none;`;
+    document.querySelector('#img1').style.cssText=`display:none;`;
+    document.querySelector('#img1').style.cssText=`display:none;`;
+    document.querySelector('#img2').style.cssText=`display:none;`;
+    document.querySelector('#img2').style.cssText=`display:none;`;
     // Gallery
     document.addEventListener("DOMContentLoaded",GoClick);
     window.addEventListener("hashchange",GoClick);
@@ -49,10 +49,10 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
       }
     }
 
-    document.querySelector('#img4').src= ' ';
-    document.querySelector('#img4').setAttribute('alt', ' ');
-    document.querySelector('#img5').src= ' ';
-    document.querySelector('#img5').setAttribute('alt', ' ');
+    document.querySelector('#img4').style.cssText=`display:none;`;
+    document.querySelector('#img4').style.cssText=`display:none;`;
+    document.querySelector('#img5').style.cssText=`display:none;`;
+    document.querySelector('#img5').style.cssText=`display:none;`;
     // document.querySelector('#367').src= ' ';
     // document.querySelector('#367').setAttribute('alt', ' ');
     // Gallery
