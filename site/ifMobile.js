@@ -2,11 +2,11 @@ console.log(window.navigator.userAgent);
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<700) {
     console.log("Вы используете мобильное устройство (телефон или планшет). And может окошко сжато по ширине >700px");
     // document.querySelector('img').style.cssText=`display:none;`;
+    // document.querySelector('#img3').style.cssText=`display:none;`;
     document.querySelector('#img3').style.cssText=`display:none;`;
-    document.querySelector('#img3').style.cssText=`display:none;`;
+    // document.querySelector('#img1').style.cssText=`display:none;`;
     document.querySelector('#img1').style.cssText=`display:none;`;
-    document.querySelector('#img1').style.cssText=`display:none;`;
-    document.querySelector('#img2').style.cssText=`display:none;`;
+    // document.querySelector('#img2').style.cssText=`display:none;`;
     document.querySelector('#img2').style.cssText=`display:none;`;
     // Gallery
     document.addEventListener("DOMContentLoaded",GoClick);
@@ -49,9 +49,8 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
       }
     }
 
+    // document.querySelector('#ok367').style.cssText=`display:none;`;
     document.querySelector('#img4').style.cssText=`display:none;`;
-    document.querySelector('#img4').style.cssText=`display:none;`;
-    document.querySelector('#img5').style.cssText=`display:none;`;
     document.querySelector('#img5').style.cssText=`display:none;`;
     // document.querySelector('#367').src= ' ';
     // document.querySelector('#367').setAttribute('alt', ' ');
@@ -105,6 +104,124 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
 }else{
   document.querySelector('#ClickFlipping').style.cssText=`display:none;`;
   document.querySelector('#ClickFlippingTwo').style.cssText=`display:none;`;
+  document.querySelector('#leftButton').style.cssText=`
+  display:flex;
+  align-items:center;
+  width:17px;
+  height:100px;
+  background:green;
+  border-radius:5px;
+  `;
+  document.querySelector('#leftButton').innerHTML=`<`;
+  document.querySelector('#rightButton').style.cssText=`
+  display:flex;
+  align-items:center;
+  width:17px;
+  height:100px;
+  background:orange;
+  border-radius:5px;
+  `;
+  document.querySelector('#rightButton').innerHTML=`>`;
+  //CountFoto
+  const numberCount={
+    numOne: +0,
+    numTwo: +0,
+    numThre:+0
+  };
+  let clickLeft=IMG9.length;
+  numberCount.numOne=0;
+  numberCount.numTwo=1;
+  numberCount.numThre=2;
+  function goListing(){
 
+    console.log(IMG9.lenght);
+    if(numberCount.numOne>=IMG9.length){
+      numberCount.numOne=0;
+    }else if(numberCount.numTwo>=IMG9.length){
+      numberCount.numTwo=0;
+    }else if(numberCount.numThre>=IMG9.length){
+      numberCount.numThre=0;
+    }else if(numberCount.numOne<=0){
+      numberCount.numOne=IMG9.length;
+    }else if(numberCount.numTwo<=0){
+      numberCount.numTwo=IMG9.length;
+    }else if(numberCount.numThre<=0){
+      numberCount.numThre=IMG9.length;
+    }
+    console.log(numberCount.numOne+" "+numberCount.numTwo+" "+numberCount.numThre);
+    document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+    document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
+    document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
+  }
+  document.querySelector('#leftButton').addEventListener('click',()=>{
+    numberCount.numOne++;
+    numberCount.numTwo++;
+    numberCount.numThre++;
+    goListing();
+    // clickLeft--;
+    // console.log(clickLeft);
+    // function leftButtonGo(){
+    //   for(let nLeft=0;nLeft<IMG9.length;nLeft++){
+    //     let oneImg=nLeft-clickLeft+1;
+    //     let oneTo=[nLeft+2]-clickLeft;
+    //     if(nLeft>clickLeft){
+    //       // console.log("number"+clickLeft);
+    //       // console.log("numberY"+[nLeft-clickLeft]+" "+oneImg+" "+oneTo+" ");
+    //       //
+    //       // document.querySelector('#ok367').src=IMG9[nLeft-clickLeft].src;
+    //       // document.querySelector('#img5').src=IMG9[oneImg].src;
+    //       // document.querySelector('#img4').src=IMG9[oneTo].src;
+    //
+    //     }else if(clickLeft==IMG9.length){
+    //       console.log("==click");
+    //     }else if(clickLeft==0||clickLeft==-1){
+    //       console.log('MINUS');
+    //       clickLeft=IMG9.length;
+    //     }
+    //   }
+    //   console.log("Фанкшин ГО");
+    // }
+    // leftButtonGo();
+  });
+
+  //RightButtonGo "Function"
+  document.querySelector('#rightButton').addEventListener('click',()=>{
+    numberCount.numOne--;
+    numberCount.numTwo--;
+    numberCount.numThre--;
+    goListing();
+    // function rightButtonGo(){
+    //   clickRight++;
+    //   console.log("rightClkick"+clickRight);
+    //   for(let nRight=0;nRight<IMG9.length;nRight++){
+    //
+    //     let onImg=nRight-clickRight+1;
+    //     let onTo=[nRight+2]-clickRight;
+    //
+    //     if(nRight>clickRight){
+    //       console.log(IMG9.lenght);
+    //       console.log("number"+clickRight);
+    //       console.log("numberY"+[nRight-clickRight]+" "+onImg+" "+onTo+" ");
+    //
+    //       document.querySelector('#ok367').src=IMG9[nRight-clickRight].src;
+    //       document.querySelector('#img5').src=IMG9[onImg].src;
+    //       document.querySelector('#img4').src=IMG9[onTo].src;
+    //
+    //     }else if(clickRight==IMG9.length){
+    //       nRight=0;
+    //       onImg=nRight-clickRight+1;
+    //       onTo=[nRight+2]-clickRight;
+    //       clickRight=0;
+    //       console.log(IMG9.lenght+"ON");
+    //       console.log("==clickR");
+    //     }else if(clickRight==0||clickRight==-1){
+    //       console.log('MINUS R');
+    //       clickRight=0;
+    //     }
+    //   }
+    //   console.log("Фанкшин ГО R");
+    // }
+    // rightButtonGo();
+  });
   console.log("Вы используете ПК.");
 }
