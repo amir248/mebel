@@ -124,46 +124,22 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
   document.querySelector('#rightButton').innerHTML=`>`;
   //CountFoto
   const numberCount={
-    numOne: +0,
-    numTwo: +0,
-    numThre:+0
+    numOne: 1,
+    numTwo: 2,
+    numThre:3
   };
-  let clickLeft=IMG9.length;
-  numberCount.numOne=0;
-  numberCount.numTwo=1;
-  numberCount.numThre=2;
-document.addEventListener('DOMContentLoaded', ()=>{
-  console.log("ok");
-    try{
-      document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
-    }catch{
-      numberCount.numOne=IMG9.length;
-      // console.log("OSHIBKA@!!!");
-      document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
-      console.log(numberCount.numOne);
-    }
-    // document.querySelector('#ok367').setAttribute('alt', IMG9[numberCount.numOne].alt);
-    // document.querySelector('#ok367').setAttribute('title', IMG9[numberCount.numOne].title);
-    try{
-      document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
-    }catch{
-      numberCount.numTwo=IMG9.length;
-      console.log(numberCount.numTwo);
-    }
-    // document.querySelector('#img5').setAttribute('alt', IMG9[numberCount.numTwo].alt);
-    // document.querySelector('#img5').setAttribute('title', IMG9[numberCount.numTwo].title);
-    try{
-      document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
-    }catch{
-      numberCount.numThre=IMG9.length;
-      console.log(numberCount.numThre);
-    }
-    // document.querySelector('#img4').setAttribute('alt', IMG9[numberCount.numThre].alt);
-    // document.querySelector('#img4').setAttribute('title', IMG9[numberCount.numThre].title);
-  });
+  // let clickLeft=IMG9.length;
+  // numberCount.numOne=0;
+  // numberCount.numTwo=1;
+  // numberCount.numThre=2;
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+      console.log("DOMContentLoaded");
+      goListing();
+    });
   //GoListing function;
     function goListing(){
-      console.log(IMG9.length);
+      // console.log(IMG9.length);
       if(numberCount.numOne>=IMG9.length){
         numberCount.numOne=0;
       }else if(numberCount.numTwo>=IMG9.length){
@@ -172,41 +148,79 @@ document.addEventListener('DOMContentLoaded', ()=>{
         numberCount.numThre=0;
       }else if(numberCount.numOne<=0){
         console.log("One");
-        numberCount.numOne=IMG9.length;
+        // numberCount.numOne=IMG9.length;
+        try{
+          document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+        }catch{
+          numberCount.numOne=(IMG9.length-1);
+        }
       }else if(numberCount.numTwo<=0){
         console.log("Two");
-        numberCount.numTwo=IMG9.length;
+        // numberCount.numTwo=IMG9.length;
+        try{
+          document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
+        }catch{
+          numberCount.numTwo=(IMG9.length-1);
+          console.log(numberCount.numTwo);
+        }
       }else if(numberCount.numThre<=0){
         console.log("Thre");
-        numberCount.numThre=IMG9.length;
+        // numberCount.numThre=IMG9.length;
+        try{
+          document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
+        }catch{
+          numberCount.numThre=(IMG9.length-1);
+          console.log(numberCount.numThre);
+        }
       }
       console.log(numberCount.numOne+" "+numberCount.numTwo+" "+numberCount.numThre);
       try{
         document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
       }catch{
-        numberCount.numOne=IMG9.length;
-        // console.log("OSHIBKA@!!!");
-        document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
-        // console.log(numberCount.numOne);
+        numberCount.numOne=(IMG9.length-1);
+        console.log("OSH@!!!");
       }
-      // document.querySelector('#ok367').setAttribute('alt', IMG9[numberCount.numOne].alt);
-      // document.querySelector('#ok367').setAttribute('title', IMG9[numberCount.numOne].title);
+      try{
+        document.querySelector('#ok367').setAttribute('alt', IMG9[numberCount.numOne].alt);
+      }catch{
+        numberCount.numOne=(IMG9.length-1);
+      }
+      try{
+        document.querySelector('#ok367').setAttribute('title', IMG9[numberCount.numOne].title);
+      }catch{
+        numberCount.numOne=(IMG9.length-1);
+      }
       try{
         document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
       }catch{
-        numberCount.numTwo=IMG9.length;
-        console.log(numberCount.numTwo);
+        numberCount.numTwo=(IMG9.length-1);
       }
-      // document.querySelector('#img5').setAttribute('alt', IMG9[numberCount.numTwo].alt);
-      // document.querySelector('#img5').setAttribute('title', IMG9[numberCount.numTwo].title);
+      try{
+        document.querySelector('#img5').setAttribute('alt', IMG9[numberCount.numTwo].alt);
+      }catch{
+        numberCount.numTwo=(IMG9.length-1);
+      }
+      try{
+        document.querySelector('#img5').setAttribute('title', IMG9[numberCount.numTwo].title);
+      }catch{
+        numberCount.numTwo=(IMG9.length-1);
+      }
       try{
         document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
       }catch{
-        numberCount.numThre=IMG9.length;
-        console.log(numberCount.numThre);
+        numberCount.numThre=(IMG9.length-1);
+        // document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
       }
-      // document.querySelector('#img4').setAttribute('alt', IMG9[numberCount.numThre].alt);
-      // document.querySelector('#img4').setAttribute('title', IMG9[numberCount.numThre].title);
+      try{
+        document.querySelector('#img4').setAttribute('alt', IMG9[numberCount.numThre].alt);
+      }catch{
+        numberCount.numThre=(IMG9.length-1);
+      }
+      try{
+        document.querySelector('#img4').setAttribute('title', IMG9[numberCount.numThre].title);
+      }catch{
+        numberCount.numThre=(IMG9.length-1);
+      }
     };
 
 
