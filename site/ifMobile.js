@@ -132,27 +132,84 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
   numberCount.numOne=0;
   numberCount.numTwo=1;
   numberCount.numThre=2;
-  function goListing(){
-
-    console.log(IMG9.lenght);
-    if(numberCount.numOne>=IMG9.length){
-      numberCount.numOne=0;
-    }else if(numberCount.numTwo>=IMG9.length){
-      numberCount.numTwo=0;
-    }else if(numberCount.numThre>=IMG9.length){
-      numberCount.numThre=0;
-    }else if(numberCount.numOne<=0){
+document.addEventListener('DOMContentLoaded', ()=>{
+  console.log("ok");
+    try{
+      document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+    }catch{
       numberCount.numOne=IMG9.length;
-    }else if(numberCount.numTwo<=0){
-      numberCount.numTwo=IMG9.length;
-    }else if(numberCount.numThre<=0){
-      numberCount.numThre=IMG9.length;
+      // console.log("OSHIBKA@!!!");
+      document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+      console.log(numberCount.numOne);
     }
-    console.log(numberCount.numOne+" "+numberCount.numTwo+" "+numberCount.numThre);
-    document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
-    document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
-    document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
-  }
+    // document.querySelector('#ok367').setAttribute('alt', IMG9[numberCount.numOne].alt);
+    // document.querySelector('#ok367').setAttribute('title', IMG9[numberCount.numOne].title);
+    try{
+      document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
+    }catch{
+      numberCount.numTwo=IMG9.length;
+      console.log(numberCount.numTwo);
+    }
+    // document.querySelector('#img5').setAttribute('alt', IMG9[numberCount.numTwo].alt);
+    // document.querySelector('#img5').setAttribute('title', IMG9[numberCount.numTwo].title);
+    try{
+      document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
+    }catch{
+      numberCount.numThre=IMG9.length;
+      console.log(numberCount.numThre);
+    }
+    // document.querySelector('#img4').setAttribute('alt', IMG9[numberCount.numThre].alt);
+    // document.querySelector('#img4').setAttribute('title', IMG9[numberCount.numThre].title);
+  });
+  //GoListing function;
+    function goListing(){
+      console.log(IMG9.length);
+      if(numberCount.numOne>=IMG9.length){
+        numberCount.numOne=0;
+      }else if(numberCount.numTwo>=IMG9.length){
+        numberCount.numTwo=0;
+      }else if(numberCount.numThre>=IMG9.length){
+        numberCount.numThre=0;
+      }else if(numberCount.numOne<=0){
+        console.log("One");
+        numberCount.numOne=IMG9.length;
+      }else if(numberCount.numTwo<=0){
+        console.log("Two");
+        numberCount.numTwo=IMG9.length;
+      }else if(numberCount.numThre<=0){
+        console.log("Thre");
+        numberCount.numThre=IMG9.length;
+      }
+      console.log(numberCount.numOne+" "+numberCount.numTwo+" "+numberCount.numThre);
+      try{
+        document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+      }catch{
+        numberCount.numOne=IMG9.length;
+        // console.log("OSHIBKA@!!!");
+        document.querySelector('#ok367').src=IMG9[numberCount.numOne].src;
+        // console.log(numberCount.numOne);
+      }
+      // document.querySelector('#ok367').setAttribute('alt', IMG9[numberCount.numOne].alt);
+      // document.querySelector('#ok367').setAttribute('title', IMG9[numberCount.numOne].title);
+      try{
+        document.querySelector('#img5').src=IMG9[numberCount.numTwo].src;
+      }catch{
+        numberCount.numTwo=IMG9.length;
+        console.log(numberCount.numTwo);
+      }
+      // document.querySelector('#img5').setAttribute('alt', IMG9[numberCount.numTwo].alt);
+      // document.querySelector('#img5').setAttribute('title', IMG9[numberCount.numTwo].title);
+      try{
+        document.querySelector('#img4').src=IMG9[numberCount.numThre].src;
+      }catch{
+        numberCount.numThre=IMG9.length;
+        console.log(numberCount.numThre);
+      }
+      // document.querySelector('#img4').setAttribute('alt', IMG9[numberCount.numThre].alt);
+      // document.querySelector('#img4').setAttribute('title', IMG9[numberCount.numThre].title);
+    };
+
+
   document.querySelector('#leftButton').addEventListener('click',()=>{
     numberCount.numOne++;
     numberCount.numTwo++;
