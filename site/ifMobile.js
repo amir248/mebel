@@ -110,17 +110,56 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
   width:17px;
   height:100px;
   background:green;
-  border-radius:5px;
+  border-radius:7px 0px 0px 7px;
   `;
+  document.querySelector('#leftButton').addEventListener('mousemove',()=>{
+    document.querySelector('#leftButton').style.cssText=`
+    display:flex;
+    align-items:center;
+    width:17px;
+    height:100px;
+    background:yellowgreen;
+    border-radius:7px 0px 0px 7px;
+    `
+  });document.querySelector('#leftButton').addEventListener('mouseout',()=>{
+    document.querySelector('#leftButton').style.cssText=`
+    display:flex;
+    align-items:center;
+    width:17px;
+    height:100px;
+    background:green;
+    border-radius:7px 0px 0px 7px;
+    `
+  });
   document.querySelector('#leftButton').innerHTML=`<`;
+  //RightButton:
   document.querySelector('#rightButton').style.cssText=`
   display:flex;
   align-items:center;
   width:17px;
   height:100px;
   background:orange;
-  border-radius:5px;
+  border-radius:0px 7px 7px 0px;
   `;
+  document.querySelector('#rightButton').addEventListener('mousemove',()=>{
+    document.querySelector('#rightButton').style.cssText=`
+    display:flex;
+    align-items:center;
+    width:17px;
+    height:100px;
+    background:yellowgreen;
+    border-radius:0px 7px 7px 0px;
+    `
+  });document.querySelector('#rightButton').addEventListener('mouseout',()=>{
+    document.querySelector('#rightButton').style.cssText=`
+    display:flex;
+    align-items:center;
+    width:17px;
+    height:100px;
+    background:orange;
+    border-radius:0px 7px 7px 0px;
+    `
+  });
   document.querySelector('#rightButton').innerHTML=`>`;
   //CountFoto
   const numberCount={
@@ -128,10 +167,6 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
     numTwo: 2,
     numThre:3
   };
-  // let clickLeft=IMG9.length;
-  // numberCount.numOne=0;
-  // numberCount.numTwo=1;
-  // numberCount.numThre=2;
 
     document.addEventListener("DOMContentLoaded", ()=>{
       console.log("DOMContentLoaded");
