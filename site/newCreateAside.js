@@ -3,6 +3,7 @@ let pageList=`<a href="#" style="margin:1%">Верх</a>
 <a href="https://sibiro.ru/footprint.html" style="margin:1%">FOOTPRINT</a>
 <a href="https://sibiro.ru/made.html" style="margin:1%">MADE</a>
 <a href="https://sibiro.ru/wood.html" style="margin:1%">WOOD</a>
+<a href="https://sibiro.ru/maps.html" style="margin:1%">Map</a>
 `;
 if(window.innerWidth>1100){
   console.log(">1100");
@@ -47,8 +48,7 @@ if(window.innerWidth>1100){
 //   `
 // });
 }else if(window.innerWidth<1100){
-  document.querySelector('aside').style.cssText=`display:none;`;
-  document.querySelector('aside').innerHTML=``;
+  console.log('<1100');
 }else{
   console.log("else");
 }
