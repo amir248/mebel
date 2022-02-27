@@ -1,0 +1,13 @@
+@media(min-width:900px){
+  aside{
+    display:flex;
+    position:sticky;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    background: green;
+    height:300px;
+    max-width: 100%;
+    top:0px;
+  }
+}

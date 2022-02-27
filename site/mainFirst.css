@@ -44,6 +44,19 @@ header{
   max-width:100%;
   /* background:green; */
 }
+/* MENUFONT */
+.menuFont{
+  font-size: 20px;
+}
+.menuFont a{
+  text-decoration:none;
+  color:rgba(130,0,80,0.1);
+  text-shadow: 1px 1px 1px black;
+}
+.menuFont a:hover{
+  color:yellow;
+}
+
 header h1{
   margin-right:45%;
 }
