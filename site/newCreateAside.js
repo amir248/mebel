@@ -62,8 +62,8 @@ let bodyO=frame.querySelector('body');
 // bodyO.append(frame);
 let chatCon;
 frame.append(chatCon);
-chatCon=frame.querySelector('.chatContainer');
-frame.querySelector('.chatContainer').style.cssText=`
+chatCon=document.querySelector('.chatContainer');
+document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
