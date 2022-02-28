@@ -52,6 +52,7 @@ if(window.innerWidth>1100){
 }else{
   console.log("else");
 }
+setTimeout(()=>{
 let frame=document.querySelector('#gChatFrame');
 frame.append('chatContainer');
 document.querySelector('.chatContainer').style.cssText=`
@@ -66,3 +67,4 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `
+},3300);
