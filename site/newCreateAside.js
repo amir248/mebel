@@ -52,15 +52,18 @@ if(window.innerWidth>1100){
 }else{
   console.log("else");
 }
+
 setTimeout(()=>{
   // document.querySelector('#gChatFrame').style.cssText=`background:green;`;
 let frame=document.querySelector('#gChatFrame');
-// let htmlO=document.querySelector('#gChatFrame > html');
-// let bodyO=document.querySelector('#gChatFrame > body');
+let htmlO=frame.querySelector('html');
+let bodyO=frame.querySelector('body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
-let chatCon=document.querySelector('.chatContainer');
-document.querySelector('.chatContainer').style.cssText=`
+let chatCon;
+frame.append(chatCon);
+chatCon=frame.querySelector('.chatContainer');
+frame.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
