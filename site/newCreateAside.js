@@ -56,8 +56,7 @@ setTimeout(()=>{
 let frame=document.querySelector('#gChatFrame');
 let htmlO=frame.append(frame);
 let bodyO=htmlO.appned(htmlO);
-bodyO.append('.chatContainer');
-document.querySelector('.chatContainer').style.cssText=`
+bodyO.append('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
