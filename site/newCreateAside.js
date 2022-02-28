@@ -54,7 +54,9 @@ if(window.innerWidth>1100){
 }
 setTimeout(()=>{
 let frame=document.querySelector('#gChatFrame');
-frame.append('chatContainer');
+let htmlO=frame.append(frame);
+let bodyO=htmlO.appned(htmlO);
+bodyO.append('.chatContainer');
 document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
