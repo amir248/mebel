@@ -52,3 +52,17 @@ if(window.innerWidth>1100){
 }else{
   console.log("else");
 }
+let frame=document.querySelector('#gChatFrame');
+frame.append('chatContainer');
+document.querySelector('.chatContainer').style.cssText=`
+font-family: Arial;
+background: none !important;
+right: 0px;
+bottom: 0px;
+padding: 0px;
+border:none !important;
+overflow: hidden;
+position: relative;
+margin: 5px;
+border-radius: 5px;
+`
