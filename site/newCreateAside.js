@@ -58,7 +58,7 @@ let htmlO=document.querySelector('html');
 let bodyO=document.querySelector('body');
 htmlO.append(bodyO);
 bodyO.appned(frame);
-bodyO.append('.chatContainer').style.cssText=`
+frame.append('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
