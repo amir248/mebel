@@ -59,7 +59,8 @@ let frame=document.querySelector('#gChatFrame');
 // let bodyO=document.querySelector('#gChatFrame > body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
-let chatCon=document.querySelector('.chatContainer').style.cssText=`
+let chatCon=document.querySelector('.chatContainer');
+document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
