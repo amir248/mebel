@@ -67,4 +67,4 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `
-},3300);
+},3900);
