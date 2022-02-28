@@ -52,7 +52,7 @@ if(window.innerWidth>1100){
 }else{
   console.log("else");
 }
-setTimeout(()=>{
+// setTimeout(()=>{
   document.querySelector('#gChatFrame').style.cssText=`background:green;`;
 let frame=document.querySelector('#gChatFrame');
 // let htmlO=document.querySelector('#gChatFrame > html');
@@ -72,4 +72,4 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `
-},3900);
+// },3900);
