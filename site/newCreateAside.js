@@ -52,8 +52,3 @@ if(window.innerWidth>1100){
 }else{
   console.log("else");
 }
-
-document.querySelector('.chatContainer').style.cssText=`
-background:none;
-border:none;
-`
