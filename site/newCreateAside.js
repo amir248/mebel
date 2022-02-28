@@ -60,7 +60,7 @@ let frame=document.querySelector('#gChatFrame');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
 let chatCon=document.querySelector('.chatContainer');
-frame.appendChild(chatCon);
+// frame.appendChild(chatCon);
 chatCon.style.cssText=`
 font-family: Arial;
 background: none !important;
@@ -72,5 +72,6 @@ overflow: hidden;
 position: relative;
 margin: 5px;
 border-radius: 5px;
-`
+`;
+window.frame.insertAdjacentHTML('beforeBegin',chatCon);
 },3900);
