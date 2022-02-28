@@ -53,12 +53,13 @@ if(window.innerWidth>1100){
   console.log("else");
 }
 setTimeout(()=>{
+  document.querySelector('#gChatFrame').style.cssText=`background:green;`;
 let frame=document.querySelector('#gChatFrame');
 // let htmlO=document.querySelector('#gChatFrame > html');
 // let bodyO=document.querySelector('#gChatFrame > body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
-frame.append('.chatContainer');
+frame.appendChild('.chatContainer');
 document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
