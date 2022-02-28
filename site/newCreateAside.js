@@ -54,21 +54,20 @@ if(window.innerWidth>1100){
 }
 
 setTimeout(()=>{
-  // document.querySelector('#gChatFrame').style.cssText=`background:green;`;
+  document.querySelector('#gChatFrame').classList.add('.chatContainer');
+  document.querySelector('.chatContainer').style.cssText=`
+  font-family: Arial;
+  background: none !important;
+  right: 0px;
+  bottom: 0px;
+  padding: 0px;
+  border:none !important;
+  overflow: hidden;
+  position: relative;
+  margin: 5px;
+  border-radius: 5px;
+  `;
 let frame=document.querySelector('#gChatFrame');
-    document[1].querySelector('.chatContainer').style.cssText=`
-    font-family: Arial;
-    background: none !important;
-    right: 0px;
-    bottom: 0px;
-    padding: 0px;
-    border:none !important;
-    overflow: hidden;
-    position: relative;
-    margin: 5px;
-    border-radius: 5px;
-    `;
-
 let htmlO=frame.querySelector('html');
 let bodyO=frame.querySelector('body');
 // htmlO.append(bodyO);
@@ -76,7 +75,7 @@ let bodyO=frame.querySelector('body');
 let chatCon;
 frame.append(chatCon);
 chatCon=document.querySelector('.chatContainer');
-document[1].querySelector('.chatContainer').style.cssText=`
+document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
