@@ -61,7 +61,7 @@ let frame=document.querySelector('#gChatFrame');
 // bodyO.append(frame);
 let chatCon=document.querySelector('.chatContainer');
 // frame.appendChild(chatCon);
-chatCon.style.cssText=`
+document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
@@ -73,5 +73,5 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `;
-window.frame.insertAdjacentHTML('beforeBegin',chatCon);
+window.frame.insertAdjacentHTML('beforeBegin',document.querySelector('.chatContainer'));
 },3900);
