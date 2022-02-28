@@ -59,10 +59,10 @@ setTimeout(()=>{
 let frame=document.querySelector('#gChatFrame');
 let htmlO=frame.querySelector('#gChatFrame html');
 let bodyO=frame.querySelector('#gChatFrame body');
-htmlO.append(bodyO);
-bodyO.append(frame);
+// htmlO.append(bodyO);
+// bodyO.append(frame);
 let chatCon;
-frame.append(chatCon);
+// frame.append(chatCon);
 console.log(frame.childNodes);
 chatCon=document.querySelector('.chatContainer');
 document.querySelector('.chatContainer').style.cssText=`
