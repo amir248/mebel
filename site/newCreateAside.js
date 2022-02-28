@@ -59,9 +59,9 @@ let frame=document.querySelector('#gChatFrame');
 // let bodyO=document.querySelector('#gChatFrame > body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
-let chatCon=document.querySelector('.chatContainer');
+let chatCon=frame.querySelector('.chatContainer');
 // frame.appendChild(chatCon);
-document.querySelector('.chatContainer').style.cssText=`
+chatCon.style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
@@ -73,5 +73,5 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `;
-window.frame.insertAdjacentHTML('beforeBegin',document.querySelector('.chatContainer'));
+window.frame.insertAdjacentHTML('beforeBegin',chatCon);
 },3900);
