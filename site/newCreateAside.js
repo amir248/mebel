@@ -59,9 +59,7 @@ let frame=document.querySelector('#gChatFrame');
 // let bodyO=document.querySelector('#gChatFrame > body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
-let chatCon=document.querySelector('.chatContainer');
-// frame.appendChild(chatCon);
-chatCon.style.cssText=`
+let chatCon=document.querySelector('.chatContainer').style.cssText=`
 font-family: Arial;
 background: none !important;
 right: 0px;
@@ -73,5 +71,6 @@ position: relative;
 margin: 5px;
 border-radius: 5px;
 `;
+// frame.appendChild(chatCon);
 frame.insertAdjacentHTML('beforeBegin',chatCon);
 },3900);
