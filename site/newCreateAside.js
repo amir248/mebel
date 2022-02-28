@@ -57,8 +57,8 @@ setTimeout(()=>{
   // document.querySelector('#gChatFrame').style.cssText=`background:green;`;
 
 let frame=document.querySelector('#gChatFrame');
-let htmlO=frame.querySelector('#gChatFrame html');
-let bodyO=frame.querySelector('#gChatFrame body');
+// let htmlO=frame.querySelector('#gChatFrame html');
+// let bodyO=frame.querySelector('#gChatFrame body');
 // htmlO.append(bodyO);
 // bodyO.append(frame);
 let chatCon;
