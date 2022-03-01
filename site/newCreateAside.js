@@ -54,7 +54,7 @@ if(window.innerWidth>1100){
 }
 
 setTimeout(()=>{
-  // document.querySelector('#gChatFrame').style.cssText=`background:green;`;
+  document.querySelector('#gChatFrame').style.cssText=`background:green;`;
   console.log(document.querySelector('#gChatFrame').childNodes);
 
 let frame=document.querySelector('#gChatFrame');
