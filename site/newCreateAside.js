@@ -57,26 +57,26 @@ setTimeout(()=>{
   document.querySelector('#gChatFrame').style.cssText=`background:green;`;
   console.log(document.querySelector('#gChatFrame').childNodes);
 
-let frame=document.querySelector('#gChatFrame');
-// let htmlO=frame.querySelector('#gChatFrame html');
-// let bodyO=frame.querySelector('#gChatFrame body');
-// htmlO.append(bodyO);
-// bodyO.append(frame);
-let chatCon;
-// frame.append(chatCon);
-chatCon=document.querySelector('.chatContainer');
-document.querySelector('.chatContainer').style.cssText=`
-font-family: Arial;
-background: none !important;
-right: 0px;
-bottom: 0px;
-padding: 0px;
-border:none !important;
-overflow: hidden;
-position: relative;
-margin: 5px;
-border-radius: 5px;
-`;
-// frame.appendChild(chatCon);
-frame.insertAdjacentHTML('beforeBegin',chatCon);
+// let frame=document.querySelector('#gChatFrame');
+// // let htmlO=frame.querySelector('#gChatFrame html');
+// // let bodyO=frame.querySelector('#gChatFrame body');
+// // htmlO.append(bodyO);
+// // bodyO.append(frame);
+// let chatCon;
+// // frame.append(chatCon);
+// chatCon=document.querySelector('.chatContainer');
+// document.querySelector('.chatContainer').style.cssText=`
+// font-family: Arial;
+// background: none !important;
+// right: 0px;
+// bottom: 0px;
+// padding: 0px;
+// border:none !important;
+// overflow: hidden;
+// position: relative;
+// margin: 5px;
+// border-radius: 5px;
+// `;
+// // frame.appendChild(chatCon);
+// frame.insertAdjacentHTML('beforeBegin',chatCon);
 },3900);
