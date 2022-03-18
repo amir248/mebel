@@ -8,10 +8,17 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
     document.querySelector('#img1').style.cssText=`display:none;`;
     // document.querySelector('#img2').style.cssText=`display:none;`;
     document.querySelector('#img2').style.cssText=`display:none;`;
+    document.querySelector('#img0').style.cssText=`display:none;`;
+
+// запись для отображения легкого формата и модификация по айди img
+window.addEventListener('DOMContentLoaded',()=>{
+  Plus();
+});
+
     // Gallery
     document.addEventListener("DOMContentLoaded",GoClick);
     window.addEventListener("hashchange",GoClick);
-    document.querySelector('#img').addEventListener('click',Plus);
+    document.querySelector('picture').addEventListener('click',Plus);
     let CountClick=+0;
     function Plus(){
       CountClick++;
@@ -25,26 +32,29 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
           if(IMG[newi].count==CountClick){
             // console.log('nu vot'+IMG[newi].count+'__'+CountClick);
             document.querySelector('#img').src=IMG[newi].src;
+            // document.querySelector('#img').setAttirbute('src',IMG[newi].src);
+            document.querySelector('#img').setAttribute('srcset',IMG[newi].srcset);
             document.querySelector('#img').setAttribute('alt',IMG[newi].alt);
             document.querySelector('#img').setAttribute('title',IMG[newi].title);
               window.location.hash='#'+IMG[newi].hash;
           }
         }
-    }
+    } //function Plus();
+
     function GoClick(){
       for(let aj=0;aj<IMG.length;aj++){
         if(window.location.hash=='#'+IMG[aj].hash){
         document.querySelector('#img').src=IMG[aj].src;
         document.querySelector('#img').setAttribute('alt',IMG[aj].alt);
         document.querySelector('#img').setAttribute('title',IMG[aj].title);
-          // console.log(IMG[aj].count+"_"+IMG[aj].hash);
-          // if(IMG[aj].srcset=={}){
-          //   // console.log('pusto');
-          // }else{
-          //   document.querySelector('#img').srcset=IMG[aj].srcset;
-          //   // console.log("nePusto");
-          // }
-          // localStorage.setItem(CountClick,IMG[aj].count);
+          console.log(IMG[aj].count+"_"+IMG[aj].hash);
+          if(IMG[aj].srcset=={}){
+            // console.log('pusto');
+          }else{
+            document.querySelector('#img').srcset=IMG[aj].srcset;
+            // console.log("nePusto");
+          }
+          localStorage.setItem(CountClick,IMG[aj].count);
         }
       }
     }
@@ -102,6 +112,8 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
       }
     }
 }else{
+  document.querySelector('#img').style.cssText=`display:none;`;
+
   document.querySelector('#ClickFlipping').style.cssText=`display:none;`;
   document.querySelector('#ClickFlippingTwo').style.cssText=`display:none;`;
   document.querySelector('#leftButton').style.cssText=`
