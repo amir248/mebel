@@ -3,30 +3,35 @@ IMG=[{
     count:0,
     alt:"Корпусная мебель под заказ",
     src:"https://sibiro.ru/image/odyn.png",
+    srcset:"https://sibiro.ru/image/odyn.webp",
     hash: "nul",
     title: "заказать прихожую"
     },{
     count:'1',
     alt:"Заказать мебель",
     src:"https://sibiro.ru/image/dwa.png",
+    srcset:"https://sibiro.ru/image/dwa.webp",
     hash: "1",
     title: "Good things Are going to Happen"
     },{
     count:'2',
     alt:"Заказать шкаф купе",
     src:"https://sibiro.ru/image/odyn.png",
+    srcset:"https://sibiro.ru/image/odyn.webp",
     hash: "2",
     title: "Good things Are going to Happen"
     },{
     count:'3',
     alt:"Встраиваемая корпусаная мебель",
     src:"https://sibiro.ru/image/try.png",
+    srcset:"https://sibiro.ru/image/try.webp",
     hash: "3",
     title: "Good things Are going to Happen"
     },{
     count:'4',
     alt:"прихожие",
     src:"https://sibiro.ru/image/chet.png",
+    srcset:"https://sibiro.ru/image/chet.webp",
     hash: "4",
     title: "Good things Are going to Happen"
     }]

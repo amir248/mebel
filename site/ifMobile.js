@@ -37,14 +37,14 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
         document.querySelector('#img').src=IMG[aj].src;
         document.querySelector('#img').setAttribute('alt',IMG[aj].alt);
         document.querySelector('#img').setAttribute('title',IMG[aj].title);
-          // console.log(IMG[aj].count+"_"+IMG[aj].hash);
-          // if(IMG[aj].srcset=={}){
-          //   // console.log('pusto');
-          // }else{
-          //   document.querySelector('#img').srcset=IMG[aj].srcset;
-          //   // console.log("nePusto");
-          // }
-          // localStorage.setItem(CountClick,IMG[aj].count);
+          console.log(IMG[aj].count+"_"+IMG[aj].hash);
+          if(IMG[aj].srcset=={}){
+            // console.log('pusto');
+          }else{
+            document.querySelector('#img').srcset=IMG[aj].srcset;
+            // console.log("nePusto");
+          }
+          localStorage.setItem(CountClick,IMG[aj].count);
         }
       }
     }

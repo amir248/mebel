@@ -91,10 +91,21 @@
 
       <div class="boxFoto">
         <script src="site/images.json"></script><!-- JSON файл с картинками -->
-        <img src="image/odyn.png" alt="Корпусная мебель" id="img">
-        <img src="image/dwa.png" alt="корпусные шкафы" id="img3">
-        <img src="image/try.png" alt="Шкафы купе" id="img1">
-        <img src="image/chet.png" alt="индивидуальная корпусная мебель" id="img2">
+        <picture>
+        <source type="image/webp" srcset="image/odyn.webp">
+          <img src="image/odyn.png" alt="Корпусная мебель" id="img">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="image/dwa.webp">
+          <img src="image/dwa.png" alt="корпусные шкафы" id="img3">
+        </picture>
+        <pictrue>
+          <source type="image/webp" srcset="image/try.webp">
+          <img src="image/try.png" alt="Шкафы купе" id="img1">
+        </picture>
+        <source type="image/webp" srcset="image/chet.webp">
+          <img src="image/chet.png" alt="индивидуальная корпусная мебель" id="img2">
+        </picture>
       </div>
         <div style='display:flex;justify-content: center;max-width:100%;' id='ClickFlipping'><p>ClickFlipping</p><img src='image/Click.png' alt="clickFlipping"></div>
 
@@ -201,25 +212,25 @@
         </div> -->
         <div class="iconLineOk">
           <div class="boxStyle">
-            <img src='image/FrameDesign.png' alt='Defign'>
+            <img src='image/FrameDesign.png' alt='Design'>
             <h2>DESIGN</h2>
             <p style='margin:3%;'>Создаем предметы мебели с индивидуальностью, призванные преобразить ваше пространство.</p>
             <a href="/design.html"><p>Learn More about design</p></a>
           </div>
           <div class="boxStyle">
-            <img src='image/FrameFootprint.png' alt='Defign'>
+            <img src='image/FrameFootprint.png' alt='Footprint'>
             <h2>FOOTPRINT</h2>
             <p style='margin:3%;'>С заботой о природе.</p>
             <a href="/footprint.html"><p>Learn More about footprint</p></a>
           </div>
           <div class="boxStyle">
-            <img src='image/FrameMade.png' alt='Defign'>
+            <img src='image/FrameMade.png' alt='Made'>
             <h2>MADE</h2>
             <p style='margin:3%;'>Местный дизайн и производство.</p>
             <a href="/made.html"><p>Learn More about made</p></a>
           </div>
           <div class="boxStyle">
-            <img src='image/FrameWood.png' alt='Defign'>
+            <img src='image/FrameWood.png' alt='wood'>
             <h2>WOOD</h2>
             <p style='margin:3%;'>Наш характерный и основной материал, а также его уникальные и неподвластные времени атрибуты.</p>
             <a href='/wood.html'><p>Learn More about wood</p></a>
