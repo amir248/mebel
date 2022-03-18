@@ -112,7 +112,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     }
 }else{
   document.querySelector('#img').style.cssText=`display:none;`;
-
+  document.querySelector('#Non').style.cssText=`display:none;`;
   document.querySelector('#ClickFlipping').style.cssText=`display:none;`;
   document.querySelector('#ClickFlippingTwo').style.cssText=`display:none;`;
   document.querySelector('#leftButton').style.cssText=`
