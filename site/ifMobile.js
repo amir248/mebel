@@ -10,6 +10,11 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
     document.querySelector('#img2').style.cssText=`display:none;`;
     document.querySelector('#img0').style.cssText=`display:none;`;
 
+    document.querySelector('#odynNon').style.cssText=`display:none;`;
+    document.querySelector('#twoNon').style.cssText=`display:none;`;
+    document.querySelector('#fryNon').style.cssText=`display:none;`;
+    document.querySelector('#fooNon').style.cssText=`display:none;`;
+    document.querySelector('picture').style.cssText=`display:none;`;
 // запись для отображения легкого формата и модификация по айди img
 window.addEventListener('DOMContentLoaded',()=>{
   Plus();
@@ -18,7 +23,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     // Gallery
     document.addEventListener("DOMContentLoaded",GoClick);
     window.addEventListener("hashchange",GoClick);
-    document.querySelector('picture').addEventListener('click',Plus);
+    document.querySelector('#img').addEventListener('click',Plus);
     let CountClick=+0;
     function Plus(){
       CountClick++;

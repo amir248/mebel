@@ -137,11 +137,12 @@ article button:hover{
   max-width:100%;
   min-height:320px;
 }
-.boxFoto img{
+.boxFoto picture{
   display:flex;
   justify-content: center;
   align-items: center;
   max-width:100%;
+  width: 360px;
   min-height: 320px;
   flex-wrap: wrap;
 }
