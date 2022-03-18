@@ -99,14 +99,14 @@ window.addEventListener('DOMContentLoaded',()=>{
         document.querySelector('#ok367').src=IMG9[ay].src;
         document.querySelector('#ok367').setAttribute('alt',IMG9[ay].alt);
         document.querySelector('#ok367').setAttribute('title',IMG9[ay].title);
-          // console.log(IMG[aj].count+"_"+IMG[aj].hash);
-          // if(IMG[aj].srcset=={}){
-          //   // console.log('pusto');
-          // }else{
-          //   document.querySelector('#img').srcset=IMG[aj].srcset;
-          //   // console.log("nePusto");
-          // }
-          // localStorage.setItem(CountClick,IMG[aj].count);
+          console.log(IMG[aj].count+"_"+IMG[aj].hash);
+          if(IMG[aj].srcset=={}){
+            // console.log('pusto');
+          }else{
+            document.querySelector('#img').srcset=IMG[aj].srcset;
+            // console.log("nePusto");
+          }
+          localStorage.setItem(CountClick,IMG[aj].count);
         }
       }
     }
