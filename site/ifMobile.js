@@ -3,18 +3,12 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
     console.log("Вы используете мобильное устройство (телефон или планшет). And может окошко сжато по ширине >700px");
     // document.querySelector('img').style.cssText=`display:none;`;
     // document.querySelector('#img3').style.cssText=`display:none;`;
-    document.querySelector('#img3').style.cssText=`display:none;`;
-    // document.querySelector('#img1').style.cssText=`display:none;`;
-    document.querySelector('#img1').style.cssText=`display:none;`;
-    // document.querySelector('#img2').style.cssText=`display:none;`;
-    document.querySelector('#img2').style.cssText=`display:none;`;
-    document.querySelector('#img0').style.cssText=`display:none;`;
 
     document.querySelector('#odynNon').style.cssText=`display:none;`;
     document.querySelector('#twoNon').style.cssText=`display:none;`;
     document.querySelector('#fryNon').style.cssText=`display:none;`;
     document.querySelector('#fooNon').style.cssText=`display:none;`;
-    document.querySelector('picture').style.cssText=`display:none;`;
+    // document.querySelector('picture').style.cssText=`display:none;`;
 // запись для отображения легкого формата и модификация по айди img
 window.addEventListener('DOMContentLoaded',()=>{
   Plus();
