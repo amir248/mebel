@@ -47,13 +47,13 @@ window.addEventListener('DOMContentLoaded',()=>{
         document.querySelector('#img').setAttribute('alt',IMG[aj].alt);
         document.querySelector('#img').setAttribute('title',IMG[aj].title);
           console.log(IMG[aj].count+"_"+IMG[aj].hash);
-          if(IMG[aj].srcset=={}){
-            // console.log('pusto');
-          }else{
-            document.querySelector('#img').srcset=IMG[aj].srcset;
-            // console.log("nePusto");
-          }
-          localStorage.setItem(CountClick,IMG[aj].count);
+          // if(IMG[aj].srcset=={}){
+          //   // console.log('pusto');
+          // }else{
+          //   document.querySelector('#img').srcset=IMG[aj].srcset;
+          //   // console.log("nePusto");
+          // }
+          // localStorage.setItem(CountClick,IMG[aj].count);
         }
       }
     }
@@ -100,13 +100,13 @@ window.addEventListener('DOMContentLoaded',()=>{
         document.querySelector('#ok367').setAttribute('alt',IMG9[ay].alt);
         document.querySelector('#ok367').setAttribute('title',IMG9[ay].title);
           console.log(IMG[aj].count+"_"+IMG[aj].hash);
-          if(IMG[aj].srcset=={}){
-            // console.log('pusto');
-          }else{
-            document.querySelector('#img').srcset=IMG[aj].srcset;
-            // console.log("nePusto");
-          }
-          localStorage.setItem(CountClick,IMG[aj].count);
+          // if(IMG[aj].srcset=={}){
+          //   // console.log('pusto');
+          // }else{
+          //   document.querySelector('#img').srcset=IMG[aj].srcset;
+          //   // console.log("nePusto");
+          // }
+          // localStorage.setItem(CountClick,IMG[aj].count);
         }
       }
     }
@@ -115,6 +115,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   document.querySelector('#Non').style.cssText=`display:none;`;
   document.querySelector('#ClickFlipping').style.cssText=`display:none;`;
   document.querySelector('#ClickFlippingTwo').style.cssText=`display:none;`;
+  
   document.querySelector('#leftButton').style.cssText=`
   display:flex;
   align-items:center;
